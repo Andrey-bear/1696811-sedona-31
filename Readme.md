@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Колташов](https://up.htmlacademy.ru/htmlcss/31/user/1696811).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Панасюк](https://htmlacademy.ru/profile/sasha_oldsport).
 
 ---
 
