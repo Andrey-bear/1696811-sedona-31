@@ -1,27 +1,27 @@
 /* Variables */
 :root {
-  --basic: #FFFFFF;
-  --basic-extra: #81B3D2;
-  --basic-extra-light: #EEEEEE;
-  --basic-neutral: #F2F2F2;
+  --basic: #ffffff;
+  --basic-extra: #81b3d2;
+  --basic-extra-light: #eeeeee;
+  --basic-neutral: #f2f2f2;
   --main-text: #000000;
   --text-light: #666666;
   --additional: #333333;
-  --accent: #FFFFFF;
+  --accent: #ffffff;
   --navigation-rest: #000000;
-  --navigation-aiming: #81B3D2;
+  --navigation-aiming: #81b3d2;
   --navigation-active: #766357;
-  --blocked: #6A6A6A;
-  --find-rest: #81B3D2;
-  --find-aiming:#669EC0;
-  --find-pressing: #5496BD;
+  --blocked: #6a6a6a;
+  --find-rest: #81b3d2;
+  --find-aiming: #669ec0;
+  --find-pressing: #5496bd;
   --search-rest: #766357;
-  --search-aiming: #604E43;
-  --search-pressing: #503E33;
-  --small-button: #A9A9A9;
-  --copyright: #BDBBBC;
-  --aiming: #EBEBEB;
-  --focus-light: #E5E5E5;
+  --search-aiming: #604e43;
+  --search-pressing: #503e33;
+  --small-button: #a9a9a9;
+  --copyright: #bdbbbc;
+  --aiming: #ebebeb;
+  --focus-light: #e5e5e5;
 }
 /* Grid */
 .page {
@@ -38,17 +38,17 @@
   min-width: 1200px;
   margin: 0;
   padding: 0;
+  min-height: 100%;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: var(--main-text);
-  background-color: var(--basic);
   text-transform: uppercase;
-  min-height: 100%;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: var(--basic);
 }
 
 a {
@@ -87,11 +87,11 @@ a {
 }
 
 .header-background {
+  width: 1200px;
+  height: 509px;
   background-image: url(../img/shape.svg), url(../img/background1.jpg);
   background-repeat: no-repeat;
   background-position: bottom -3px center;
-  width: 1200px;
-  height: 509px;
 }
 
 .features h1 {
@@ -206,14 +206,14 @@ a {
   height: 86px;
   font: inherit;
   text-align: center;
-  background-color: var(--search-rest);
   color: var(--accent);
   vertical-align: middle;
-  border: none;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   padding: 30px 124px 30px 125px;
+  background-color: var(--search-rest);
+  border: none;
 }
 
 .best-deals-button:hover {
@@ -221,8 +221,8 @@ a {
 }
 
 .best-deals-button:active {
-  background-color: var(--search-pressing);
   color:  rgba(255, 255, 255, 0.3);
+  background-color: var(--search-pressing);
 }
 
 .colortext {
@@ -251,9 +251,9 @@ input[type="text"]::placeholder{
 
 .small-button {
   width: 38px;
-  border: none;
-  background-color: var(--basic-neutral);
   color: var(--small-button);
+  background-color: var(--basic-neutral);
+  border: none;
 }
 
 .small-button:hover {
@@ -265,8 +265,8 @@ input[type="text"]::placeholder{
 }
 
 .best-deals input {
-  border: none;
   background-color: var(--basic-neutral);
+  border: none;
 }
 
 .button {
@@ -274,13 +274,13 @@ input[type="text"]::placeholder{
   height: 58px;
   font: inherit;
   text-align: center;
-  background-color: var(--find-rest);
   color: var(--accent);
   vertical-align: middle;
-  border: none;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  background-color: var(--find-rest);
+  border: none;
 }
 
 .button:hover {
@@ -288,8 +288,8 @@ input[type="text"]::placeholder{
 }
 
 .button:active {
-  background-color: var(--find-pressing);
   color: rgba(255, 255, 255, 0.3);
+  background-color: var(--find-pressing);
 }
 
 /* main footer */
@@ -313,8 +313,8 @@ input[type="text"]::placeholder{
 .social-button {
   width: 46px;
   height: 48px;
-  background-color: var(--find-rest);
   color: inherit;
+  background-color: var(--find-rest);
 }
 
 .social-button:hover {
@@ -343,11 +343,11 @@ input[type="text"]::placeholder{
 }
 
 .legend {
+  color: var(--accent);
   background-image: url(../img/background2.jpg);
   background-color: var(--basic-extra);
   background-size: cover;
   background-repeat: no-repeat;
-  color: var(--accent);
 }
 
 .legend fieldset {
@@ -370,7 +370,6 @@ input[type="text"]::placeholder{
 }
 
 .show-list {
-  background-color: transparent;
   color: var(--basic);
   border: 2px solid var(--basic);
   border-radius: 2px;
@@ -378,15 +377,16 @@ input[type="text"]::placeholder{
   line-height: 21px;
   text-transform: uppercase;
   padding: 7px 35px 8px 36px;
+  background-color: transparent;
 }
 
 .show-list:hover {
-  background-color: var(--basic);
   color: var(--main-text);
   border-radius: 2px;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  background-color: var(--basic);
 }
 
 /* sort */
@@ -497,9 +497,9 @@ input[type="text"]::placeholder{
   font-weight: bold;
   font-size: 14px;
   height: 21px;
+  padding: 3px 16px 3px 17px;
   color: var(--basic);
   background: var(--find-rest);
-  padding: 3px 16px 3px 17px;
 }
 
 .detailed-information:hover {
@@ -517,9 +517,9 @@ input[type="text"]::placeholder{
   font-weight: bold;
   font-size: 14px;
   height: 21px;
+  padding: 3px 17px 3px 16px;
   color: var(--basic);
   background: var(--search-rest);
-  padding: 3px 17px 3px 16px;
 }
 
 .reservation:hover {
@@ -543,8 +543,8 @@ input[type="text"]::placeholder{
   line-height: 21px;
   height: 27px;
   width: 110px;
-  background-color: var(--basic-neutral);
   color: var(--text-light);
   text-align: center;
   padding-top: 10px;
+  background-color: var(--basic-neutral);
 }
