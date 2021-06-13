@@ -62,7 +62,7 @@
               </ul>
             </li>
             <li class="feature-item devil-bridge">
-              <div class="blue-accent">
+              <div class="blue-accent bridge">
                 <h2>Там есть мост дьявола</h2>
                 <span>-&Nu;2-</span>
                 <p class="reason">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -94,20 +94,34 @@
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
           </div>
           <form class="search" action="https://echo.htmlacademy.ru" method="post">
-            <button class="best-deals-button" type="button">Поиск гостиницы в седоне</button>
-            <label class="info-form" for="arrival">день заезда:</label>
-            <input class="colortext calendar" id="arrival" type="text" placeholder="24 апреля 2017">
-            <label class="info-form" for="departure">дата выезда:</label>
-            <input class="colortext calendar" id="departure" type="text" placeholder="4 июля 2017">
-            <label class="info-form adults" for="adults">взрослые:</label>
-            <button class="small-button" type="button">-</button>
-            <input class="colortext" id="adults" type="text" placeholder="2">
-            <button class="small-button" type="button">+</button>
-            <label class="info-form children" for="children">дети:</label>
-            <button class="small-button" type="button">-</button>
-            <input class="colortext" id="children" type="text" placeholder="0">
-            <button class="small-button" type="button">+</button>
-            <button class="button" type="submit">Найти</button>
+            <div class="form">
+              <div class="search-button">
+                <button class="best-deals-button" type="button">Поиск гостиницы в седоне</button>
+              </div>
+              <div class="arrival-day">
+                <label class="info-form" for="arrival">день заезда:</label>
+                <input class="colortext calendar" id="arrival" type="text" placeholder="24 апреля 2017">
+              </div>
+              <div class="date-departure">
+                <label class="info-form" for="departure">дата выезда:</label>
+                <input class="colortext calendar" id="departure" type="text" placeholder="4 июля 2017">
+              </div>
+              <div class="adults">
+                <label class="info-form adults" for="adults">взрослые:</label>
+                <button class="small-button" type="button">-</button>
+                <input class="colortext" id="adults" type="text" placeholder="2">
+                <button class="small-button" type="button">+</button>
+              </div>
+              <div class="children">
+                <label class="info-form children" for="children">дети:</label>
+                <button class="small-button" type="button">-</button>
+                <input class="colortext" id="children" type="text" placeholder="0">
+                <button class="small-button" type="button">+</button>
+              </div>
+              <div class="find-button">
+                <button class="button" type="submit">Найти</button>
+              </div>
+            </div>
           </form>
         </section>
         <img class="map" src="img/map.jpg" width="1200" height="594" alt="Карта">
