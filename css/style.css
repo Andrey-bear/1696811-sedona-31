@@ -707,23 +707,7 @@ input[type="text"]::placeholder{
   grid-template-rows: repeat(3, min-content);
 }
 
-.amara-resort {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 30px);
-  margin: 0;
-  padding: 30px;
-}
-
-.desert-quail {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 30px);
-  margin: 0;
-  padding: 30px;
-}
-
-.poco-diablo {
+.card-product {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 30px);
