@@ -40,8 +40,8 @@
           </div>
           <ol class="features-list">
             <li class="features-item">
-              <div class="blue-accent">
-                <h2>Настоящий городок</h2>
+              <div class="uniqueness">
+                <h2>Настоящий<br>городок</h2>
                 <span>-&Nu;1-</span>
                 <p>Седона — не аттракцион для туристов, тамтечёт своя жизнь</p>
               </div>
@@ -62,26 +62,26 @@
               </ul>
             </li>
             <li class="feature-item devil-bridge">
-              <div class="blue-accent bridge">
-                <h2>Там есть мост дьявола</h2>
+              <div class="uniqueness bridge">
+                <h2>Там есть<br>мост дьявола</h2>
                 <span>-&Nu;2-</span>
                 <p class="reason">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
               <img class="photo-bridge" src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
             </li>
             <div class="advantages">
-              <li class="feature-item-grey">
-                <h2>Небольшая площадь</h2>
+              <li class="feature">
+                <h2>Небольшая<br>площадь</h2>
                 <span>-&Nu;3-</span>
                 <p>Все достопримечательности находятся очень близко</p>
               </li>
-              <li class="feature-item-grey">
-                <h2>Красивая дорога</h2>
+              <li class="feature">
+                <h2>Красивая<br>дорога</h2>
                 <span>-&Nu;4-</span>
                 <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
               </li>
-              <li class="feature-item-grey">
-                <h2>Мало туристов</h2>
+              <li class="feature">
+                <h2>Мало<br>туристов</h2>
                 <span>-&Nu;5-</span>
                 <p>Большинство едет в Гранд Каньон и толпится там</p>
               </li>
@@ -91,35 +91,41 @@
         <section class="best-deals">
           <div class="best-deals-forstay">
             <h2>Заинтересовались?</h2>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
           </div>
           <form class="search" action="https://echo.htmlacademy.ru" method="post">
             <div class="form">
               <div class="search-button">
                 <button class="best-deals-button" type="button">Поиск гостиницы в седоне</button>
               </div>
-              <div class="arrival-day">
-                <label class="info-form" for="arrival">день заезда:</label>
-                <input class="colortext calendar" id="arrival" type="text" placeholder="24 апреля 2017">
-              </div>
-              <div class="date-departure">
-                <label class="info-form" for="departure">дата выезда:</label>
-                <input class="colortext calendar" id="departure" type="text" placeholder="4 июля 2017">
-              </div>
-              <div class="adults">
-                <label class="info-form adults" for="adults">взрослые:</label>
-                <button class="small-button" type="button">-</button>
-                <input class="colortext" id="adults" type="text" placeholder="2">
-                <button class="small-button" type="button">+</button>
-              </div>
-              <div class="children">
-                <label class="info-form children" for="children">дети:</label>
-                <button class="small-button" type="button">-</button>
-                <input class="colortext" id="children" type="text" placeholder="0">
-                <button class="small-button" type="button">+</button>
-              </div>
-              <div class="find-button">
-                <button class="button" type="submit">Найти</button>
+              <div class="search-form">
+                <div class="day-choice">
+                  <label class="info-form" for="arrival">день заезда:</label>
+                  <input class="colortext calendar" id="arrival" type="text" placeholder="24 апреля 2017">
+                  <div class="calendar-icon"></div>
+                </div>
+                <div class="day-choice">
+                  <label class="info-form" for="departure">дата выезда:</label>
+                  <input class="colortext calendar" id="departure" type="text" placeholder="4 июля 2017">
+                  <div class="calendar-icon"></div>
+                </div>
+                <div class="search-forms-1">
+                  <label class="info-form adults" for="adults">взрослые:</label>
+                  <div class="search-forms-2">
+                    <button class="small-button" type="button">-</button>
+                    <input class="colortext" id="adults" type="text" placeholder="2">
+                    <button class="small-button" type="button">+</button>
+                  </div>
+                  <label class="info-form children" for="children">дети:</label>
+                  <div class="search-forms-2">
+                    <button class="small-button" type="button">-</button>
+                    <input class="colortext" id="children" type="text" placeholder="0">
+                    <button class="small-button" type="button">+</button>
+                  </div>
+                </div>
+                <div class="find-button">
+                  <button class="button" type="submit">Найти</button>
+                </div>
               </div>
             </div>
           </form>
