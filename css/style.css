@@ -22,6 +22,7 @@
   --copyright: #bdbbbc;
   --aiming: #ebebeb;
   --focus-light: #e5e5e5;
+  --shadow: #dbdbdb;
 }
 /* Grid */
 .page {
@@ -52,6 +53,7 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+  box-shadow: 0 0 30px 10px var(--shadow);
 }
 
 a {
@@ -199,6 +201,10 @@ a {
   color: var(--accent);
 }
 
+.reason-number {
+  margin: 0 0 23px;
+}
+
 .list-advantages {
   margin: 0;
   padding: 0;
@@ -293,18 +299,15 @@ a {
 
 /*button form*/
 .search {
-  font-size: 14px;
-  line-height: 26px;
-  color: var(--main-text);
-  font-weight: bold;
-}
-
-.form {
+  position: absolute;
   width: 568px;
   height: 480px;
   margin: 0 315px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--main-text);
   background-color: var(--basic);
-  position: absolute;
 }
 
 .search-form {
@@ -383,17 +386,6 @@ a {
   height: 38px;
 }
 
-.calendar-icon::before {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 23px;
-  right: 64px;
-  margin-top: 7px;
-  background-image: url(../img/calendar.svg);
-  background-repeat: no-repeat;
-}
-
 .map {
   padding-top: 86px;
 }
@@ -404,7 +396,8 @@ a {
 
 .calendar:focus {
   background-color: var(--basic);
-  border: 2px solid var(--focus-light);
+  outline: 2px solid var(--focus-light);
+  outline-offset: -2px;
 }
 
 input[type="text"]::placeholder{
@@ -417,17 +410,16 @@ input[type="text"]::placeholder{
 
 .small-button {
   width: 38px;
-  color: var(--small-button);
   background-color: var(--basic-neutral);
   border: none;
 }
 
-.small-button:hover {
-  color: var(--main-text);
+.small-button:hover path {
+  fill: var(--main-text);
 }
 
-.small-button:focus {
-  color: var(--basic-extra);
+.small-button:focus path {
+  fill: var(--basic-extra);
 }
 
 .best-deals input {
@@ -465,14 +457,19 @@ input[type="text"]::placeholder{
   justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
-  min-height: 120px;
+  min-height: 130px;
+}
+
+ .index {
+  margin-top: -128px;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .contacts {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  padding: 23px 38px 36px 111px;
+  padding: 10px 38px 10px 150px;
 }
 
 .contacts-phone {
@@ -484,7 +481,7 @@ input[type="text"]::placeholder{
 .footer-social {
   width: 150px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 60px 40px 40px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -496,7 +493,7 @@ input[type="text"]::placeholder{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 36px;
+  margin-top: 40px;
   width: 46px;
   height: 48px;
   color: inherit;
@@ -746,6 +743,7 @@ input[type="text"]::placeholder{
 .star {
   display: flex;
   margin-left: auto;
+  margin-top: 20px;
   list-style: none;
 }
 
@@ -756,7 +754,8 @@ input[type="text"]::placeholder{
   width: 110px;
   color: var(--text-light);
   text-align: center;
-  padding-top: 10px;
+  margin-top: 30px;
+  padding-top: 5px;
   background-color: var(--basic-neutral);
 }
 
@@ -789,7 +788,6 @@ input[type="text"]::placeholder{
 
 .results {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px 73px 10px 73px;
 }
@@ -800,6 +798,7 @@ input[type="text"]::placeholder{
   align-self: center;
   padding-left: 46px;
   padding-right: 50px;
+  margin-right: auto;
 }
 
 .criterion-list {
