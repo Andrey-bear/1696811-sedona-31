@@ -601,17 +601,18 @@ input[type="text"]::placeholder{
   top: 0;
   width: 23px;
   height: 23px;
-  border: 2px solid var(--basic);
-  border-radius: 2px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
-  top: 3.7px;
-  left: -38.6px;
-  width: 21px;
-  height: 16px;
+  left: -42px;
+  top: 0;
+  width: 27px;
+  height: 23px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
