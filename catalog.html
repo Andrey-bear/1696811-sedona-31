@@ -28,25 +28,25 @@
         </nav>
       </header>
       <main class="container">
-        <h1 class="hidden">Каталог гастиниц</h1>
+        <h1 class="visually-hidden">Каталог гастиниц</h1>
         <section class="filters-wrapper">
-          <h2 class="hidden">Фильтр выбора гостиниц</h2>
+          <h2 class="visually-hidden">Фильтр выбора гостиниц</h2>
           <form class="legend" method="get" action="https://echo.htmlacademy.ru">
             <div class="filters">
               <section class="infrastructure">
                 <fieldset>
                   <legend class="legend-search">Инфраструктура:</legend>
                   <ul class="legend-list">
-                    <li>
-                      <input class="check-input" type="checkbox" name="pool" id="filter-pool" checked>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pool" id="filter-pool" checked>
                       <label class="check" for="filter-pool">Бассейн</label>
                     </li>
-                    <li>
-                      <input class="check-input" type="checkbox" name="parking" id="filter-parking">
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-parking">
                       <label class="check" for="filter-parking">Парковка</label>
                     </li>
-                    <li>
-                      <input class="check-input" type="checkbox" name="Wi-Fi" id="filter-Wi-Fi">
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Wi-Fi" id="filter-Wi-Fi">
                       <label class="check" for="filter-Wi-Fi">Wi-Fi</label>
                     </li>
                   </ul>
@@ -56,16 +56,16 @@
                 <fieldset>
                   <legend class="legend-search">Тип жилья:</legend>
                   <ul class="legend-list">
-                    <li>
-                      <input class="check-input" type="checkbox" name="pool" id="filter-hotel" checked>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="pool" id="filter-hotel" checked>
                       <label class="check" for="filter-hotel">Гостиница</label>
                     </li>
-                    <li>
-                      <input class="check-input" type="checkbox" name="parking" id="filter-motel" checked>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="parking" id="filter-motel" checked>
                       <label class="check" for="filter-motel">Мотель</label>
                     </li>
-                    <li>
-                      <input class="check-input" type="checkbox" name="Wi-Fi" id="filter-apartments" checked>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Wi-Fi" id="filter-apartments" checked>
                       <label class="check" for="filter-apartments">Апартаменты</label>
                     </li>
                   </ul>
@@ -73,16 +73,23 @@
               </section>
               <section class="section-prices">
                 <fieldset class="filter-item">
-                  <legend class="cost-day">Стоимость в сутки, ₽:</legend>
-                  <label class="min-price">от
-                    <input type="number" type="number" placeholder="0">
-                  </label>
-                  <label class="max-price">до
-                    <input type="number" placeholder="3000">
-                  </label>
-                  <input type="range" min="0" max="3000" value="0">
-                  <input type="range" min="0" max="3000" value="2500">
-                  <div class="show">
+                  <div class="filter-range">
+                    <legend class="cost-day">Стоимость в сутки, ₽:</legend>
+                    <div class="price-controls">
+                      <label class="min-price">от
+                        <input class="number" type="text" name="min-price" placeholder="0">
+                      </label>
+                      <label class="max-price">до
+                        <input class="number" type="text" name="max-price" placeholder="3000">
+                      </label>
+                    </div>
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="range-toggle range-toggle-min"></div>
+                      <div class="range-toggle range-toggle-max"></div>
+                    </div>
                     <button class="show-list" type="submit">Показать</button>
                   </div>
                 </fieldset>
@@ -116,7 +123,7 @@
             </div>
           </section>
           <section class="offers">
-            <h2 class="hidden">Список предложений</h2>
+            <h2 class="visually-hidden">Список предложений</h2>
             <div class="hotel-wrapper">
               <ul class="list-offers">
                 <li class="card-product">
