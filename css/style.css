@@ -567,6 +567,8 @@ input[type="text"]::placeholder{
 }
 
 .legend-search {
+  margin-bottom: 26.5px;
+  padding: 0;
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
@@ -574,7 +576,6 @@ input[type="text"]::placeholder{
 
 .legend-list {
   margin: 0;
-  padding: 0;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -591,6 +592,7 @@ input[type="text"]::placeholder{
   cursor: pointer;
   user-select: none;
 }
+
 
 .filter-input-checkbox + label::before {
   content: "";
@@ -771,6 +773,10 @@ input[type="text"]::placeholder{
   list-style: none;
 }
 
+.price {
+  margin-left: 40px;
+}
+
 .price a{
   color: var(--navigation-aiming);
 }
@@ -917,25 +923,24 @@ input[type="text"]::placeholder{
 
 .filters {
   display: flex;
-  min-height: 217px;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .infrastructure {
-  margin:26.5px 94px 29px 72px;
-}
-
-.housing-type {
-  min-width: 150px ;
-  margin: 26.5px 130px 29px 25px;
+  width: 210px;
+  margin-right: 55px;
+  margin-top: 27px;
 }
 
 .section-prices {
   width: 380px;
   display: flex;
   flex-direction: column;
-  margin: 26.5px 10px 0 200px;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 140px;
 }
 
 .show {
@@ -968,7 +973,7 @@ input[type="text"]::placeholder{
 
 .criterion-list li {
   position: relative;
-  margin-right: 30px;
+  margin-right: 32px;
 }
 
 .result-arrow-wrapper{
