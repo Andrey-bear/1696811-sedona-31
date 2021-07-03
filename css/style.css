@@ -324,14 +324,14 @@ a {
   padding: 55px;
 }
 
-.day-choice {
+.form-element {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.day-choice-small {
+.form-element-small {
   display: flex;
   align-items: center;
   margin-bottom: 24px;
@@ -344,14 +344,14 @@ a {
   color:  var(--main-text);
 }
 
-.day-choice-small .colortext {
+.form-element-small .colortext {
   text-align: center;
   width: 30px;
 }
 
  .input-block {
-  width: 280px;
-  padding: 11px 15px;
+  width: 288px;
+  padding: 11px 45px 11px 15px;
   margin-left: auto;
 }
 .adults {
@@ -364,14 +364,6 @@ a {
 
 .minus {
   margin-bottom: 3px;
-}
-
-svg>*:hover {
-  fill: var(--main-text);
-}
-
-svg>*:focus {
-  fill: var(--basic-extra);
 }
 
 .best-deals-button {
@@ -415,6 +407,12 @@ input[type="text"]::placeholder{
   color: var(--main-text);
   text-transform: uppercase;
 }
+.calendar {
+  position: absolute;
+  right: 60px;
+  background: transparent;
+  border: none;
+}
 
 .small-button {
   width: 38px;
@@ -424,11 +422,19 @@ input[type="text"]::placeholder{
   border: none;
 }
 
-.small-button:hover path {
+.calendar:hover svg>*{
   fill: var(--main-text);
 }
 
-.small-button:focus path {
+.calendar:focus svg>*{
+  fill: var(--basic-extra);
+}
+
+.small-button:hover svg>*{
+  fill: var(--main-text);
+}
+
+.small-button:focus svg>*{
   fill: var(--basic-extra);
 }
 
@@ -561,7 +567,6 @@ input[type="text"]::placeholder{
 }
 
 .legend fieldset {
-  padding: 0;
   margin: 0;
   border: none;
 }
@@ -618,12 +623,6 @@ input[type="text"]::placeholder{
   background-position: 0 0;
 }
 
-.filter-range {
-  width: 317px;
-  color: var(--basic);
-  text-transform: uppercase;
-}
-
 .cost-day {
   margin-bottom: 9px;
   font-weight: bold;
@@ -633,6 +632,7 @@ input[type="text"]::placeholder{
 
 .price-controls {
   position: relative;
+  width: 317px;
   height: 36px;
   margin-bottom: 20px;
   font-size: 0;
@@ -748,7 +748,8 @@ input[type="text"]::placeholder{
   cursor: pointer;
 }
 
-.show-list:hover {
+.show-list:hover,
+.show-list:focus {
   color: var(--main-text);
   background: var(--basic);
 }
@@ -903,6 +904,10 @@ input[type="text"]::placeholder{
   background: var(--search-pressing);
 }
 
+.box {
+  margin-right: 20px;
+}
+
 .star {
   display: flex;
   margin-left: auto;
@@ -913,12 +918,10 @@ input[type="text"]::placeholder{
 .hotel-rating {
   font-size: 14px;
   line-height: 21px;
-  height: 27px;
-  width: 110px;
   color: var(--text-light);
   text-align: center;
   margin-top: 30px;
-  padding-top: 5px;
+  padding: 3px 14px;
   background-color: var(--basic-neutral);
 }
 
@@ -926,20 +929,17 @@ input[type="text"]::placeholder{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  padding: 26px 5px;
 }
 
-.infrastructure {
-  width: 210px;
-  margin-right: 55px;
-  margin-top: 27px;
+.infrastructure{
+  padding: 0 55px 0 65px;
 }
 
 .section-prices {
-  width: 380px;
+  width: 485px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-end;
   margin-left: 140px;
 }
@@ -984,18 +984,20 @@ input[type="text"]::placeholder{
 }
 
 .card-product {
-  margin: 0 73px;
+  padding: 10px 70px 15px 70px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--focus-light);
   border-top: 1px solid var(--focus-light);
 }
 
-.card {
-  margin-right: auto;
-}
+/* .card {
+   margin-right: 540px;
+   margin-right: auto;
+} */
 
 .rank {
+  padding-left: 524px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1015,6 +1017,7 @@ input[type="text"]::placeholder{
   display: flex;
   margin-right: 75px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .buttons {
