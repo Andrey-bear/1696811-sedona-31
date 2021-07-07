@@ -313,15 +313,20 @@ a {
 }
 
 /*button form*/
-.search {
+ .search {
   position: absolute;
-  margin: 0 315px;
+  right: 0;
+  left: 0;
+  width: 458px;
+  bottom: auto;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   color: var(--main-text);
   background-color: var(--basic);
   padding: 55px;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
 
 .form-element {
@@ -400,13 +405,6 @@ a {
   outline-offset: -2px;
 }
 
-input[type="text"]::placeholder{
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 26px;
-  color: var(--main-text);
-  text-transform: uppercase;
-}
 .calendar {
   position: absolute;
   right: 60px;
@@ -426,7 +424,7 @@ input[type="text"]::placeholder{
   fill: var(--main-text);
 }
 
-.calendar:focus svg>*{
+.calendar:active svg>*{
   fill: var(--basic-extra);
 }
 
@@ -434,7 +432,7 @@ input[type="text"]::placeholder{
   fill: var(--main-text);
 }
 
-.small-button:focus svg>*{
+.small-button:active svg>*{
   fill: var(--basic-extra);
 }
 
@@ -677,14 +675,6 @@ input[type="text"]::placeholder{
   text-transform: uppercase;
 }
 
-.number[type="text"]::placeholder{
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--accent);
-  text-transform: uppercase;
-}
-
 .range-controls {
   position: relative;
   margin-bottom: 32px;
@@ -837,31 +827,30 @@ input[type="text"]::placeholder{
 }
 
 /* offers */
+
 .list-offers {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.offers h3 a {
+ .card h3 a {
+   display: block;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--main-text);
 }
 
-.offers h3 a:hover {
+ .card h3 a:hover {
   color: var(--navigation-aiming);
 }
 
-.offers h3 a:active {
+.card h3 a:active {
   color: rgba(0, 0, 0, 0.3);
-}
-
-.list-offers p {
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--additional);
 }
 
 /*detailed*/
@@ -869,7 +858,7 @@ input[type="text"]::placeholder{
   font-weight: bold;
   font-size: 14px;
   height: 21px;
-  padding: 3px 16px 3px 17px;
+  padding: 5px 16px 5px 16px;
   color: var(--basic);
   background: var(--find-rest);
 }
@@ -889,7 +878,7 @@ input[type="text"]::placeholder{
   font-weight: bold;
   font-size: 14px;
   height: 21px;
-  padding: 3px 17px 3px 16px;
+  padding: 5px 16px 5px 16px;
   color: var(--basic);
   background: var(--search-rest);
 }
@@ -904,14 +893,9 @@ input[type="text"]::placeholder{
   background: var(--search-pressing);
 }
 
-.box {
-  margin-right: 20px;
-}
-
 .star {
   display: flex;
-  margin-left: auto;
-  margin-top: 20px;
+  flex-direction: row;
   list-style: none;
 }
 
@@ -920,7 +904,7 @@ input[type="text"]::placeholder{
   line-height: 21px;
   color: var(--text-light);
   text-align: center;
-  margin-top: 30px;
+  margin: 0;
   padding: 3px 14px;
   background-color: var(--basic-neutral);
 }
@@ -958,8 +942,7 @@ input[type="text"]::placeholder{
   display: flex;
   flex-wrap: wrap;
   align-self: center;
-  padding-left: 46px;
-  padding-right: 50px;
+  margin-left: 50px;
   margin-right: auto;
 }
 
@@ -984,22 +967,46 @@ input[type="text"]::placeholder{
 }
 
 .card-product {
-  padding: 10px 70px 15px 70px;
   display: flex;
-  align-items: center;
-  border-bottom: 1px solid var(--focus-light);
+  justify-content: flex-start;
+  padding: 30px 71px 30px 73px;
   border-top: 1px solid var(--focus-light);
 }
 
-/* .card {
-   margin-right: 540px;
-   margin-right: auto;
-} */
+.card-product:last-child {
+  border-bottom: 1px solid var(--focus-light);
+}
+
+.content-item {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.name-hotel {
+  margin-top: -24px;
+}
+
+.item-subwrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.item-subwrapper p {
+  line-height: 6px;
+  color: var(--additional);
+  margin: 0 0 25px;
+}
+
+.cost-hotel:first-child {
+  margin-right: 6px
+}
 
 .rank {
-  padding-left: 524px;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -1009,17 +1016,3 @@ input[type="text"]::placeholder{
   margin-right: 30px;
 }
 
-.name-hotel {
-  margin-bottom: -20px;
-}
-
-.cost-hotel {
-  display: flex;
-  margin-right: 75px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.buttons {
-  margin-bottom: 20px;
-}

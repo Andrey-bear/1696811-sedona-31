@@ -72,10 +72,10 @@
                   <legend class="cost-day">Стоимость в сутки, ₽:</legend>
                   <div class="price-controls">
                     <label class="min-price">от
-                      <input class="number" type="text" name="min-price" placeholder="0">
+                      <input class="number" type="text" name="min-price" value="0">
                     </label>
                     <label class="max-price">до
-                      <input class="number" type="text" name="max-price" placeholder="3000">
+                      <input class="number" type="text" name="max-price" value="3000">
                     </label>
                   </div>
                   <div class="range-controls">
@@ -118,23 +118,23 @@
           </section>
           <section class="offers">
             <h2 class="visually-hidden">Список предложений</h2>
-            <div class="hotel-wrapper">
-              <ul class="list-offers">
-                <li class="card-product">
-                  <div class="photo">
-                    <img src="img/amara.jpg" width="135" height="90" alt="Гостиница:Amara Resort & Spa">
-                  </div>
+            <ul class="list-offers">
+              <li class="card-product">
+                <div class="photo">
+                  <img src="img/amara.jpg" width="135" height="90" alt="Гостиница:Amara Resort & Spa">
+                </div>
+                <div class="content-item">
                   <div class="card">
-                    <div class="name-hotel">
-                      <h3><a href="#">Amara Resort & Spa</a></h3>
-                    </div>
-                    <div class="cost-hotel">
-                      <p class="box">Гостиница</p>
-                      <p>От 4000 ₽</p>
-                    </div>
-                    <div class="buttons">
-                      <a class="detailed-information" href="#">Подробнее</a>
-                      <a class="reservation" href="#">Забронировать</a>
+                    <h3><a class="name-hotel" href="#">Amara Resort & Spa</a></h3>
+                    <div class="item-subwrapper">
+                      <div class="cost-hotel">
+                        <p>Гостиница</p>
+                        <a class="detailed-information" href="#">Подробнее</a>
+                      </div>
+                      <div class="cost-hotel">
+                        <p>От 4000 ₽</p>
+                        <a class="reservation" href="#">Забронировать</a>
+                      </div>
                     </div>
                   </div>
                   <div class="rank">
@@ -148,22 +148,24 @@
                       <p class="hotel-rating">Рейтинг: 8,5</p>
                     </div>
                   </div>
-                </li>
-                <li class="card-product">
-                  <div class="photo">
-                    <img src="img/desert.jpg" width="135" height="90" alt="Мотель:Desert Quail Inn">
-                  </div>
+                </div>
+              </li>
+              <li class="card-product">
+                <div class="photo">
+                  <img src="img/desert.jpg" width="135" height="90" alt="Мотель:Desert Quail Inn">
+                </div>
+                <div class="content-item">
                   <div class="card">
-                    <div class="name-hotel">
-                      <h3><a href="#">Desert Quail Inn</a></h3>
-                    </div>
-                    <div class="cost-hotel">
-                      <p>Мотель </p>
-                      <p>От 3000 ₽</p>
-                    </div>
-                    <div class="buttons">
-                      <a class="detailed-information" href="#">Подробнее</a>
-                      <a class="reservation" href="#">Забронировать</a>
+                    <h3><a class="name-hotel" href="#">Desert Quail Inn</a></h3>
+                    <div class="item-subwrapper">
+                      <div class="cost-hotel">
+                        <p>Мотель</p>
+                        <a class="detailed-information" href="#">Подробнее</a>
+                      </div>
+                      <div class="cost-hotel">
+                        <p>От 3000 ₽</p>
+                        <a class="reservation" href="#">Забронировать</a>
+                      </div>
                     </div>
                   </div>
                   <div class="rank">
@@ -176,22 +178,24 @@
                       <p class="hotel-rating">Рейтинг: 8,9</p>
                     </div>
                   </div>
-                </li>
-                <li class="card-product">
-                  <div class="photo">
-                    <img src="img/villas.jpg" width="135" height="90" alt="Апартаменты:Villas at Poco Diablo">
-                  </div>
+                </div>
+              </li>
+              <li class="card-product">
+                <div class="photo">
+                  <img src="img/villas.jpg" width="135" height="90" alt="Апартаменты:Villas at Poco Diablo">
+                </div>
+                <div class="content-item">
                   <div class="card">
-                    <div class="name-hotel">
-                      <h3><a href="#">Villas at Poco Diablo</a></h3>
-                    </div>
-                    <div class="cost-hotel">
-                      <p>Апартаменты</p>
-                      <p>От 2000 ₽</p>
-                    </div>
-                    <div class="buttons">
-                      <a class="detailed-information" href="#">Подробнее</a>
-                      <a class="reservation" href="#">Забронировать</a>
+                    <h3><a class="name-hotel" href="#">Villas at Poco Diablo</a></h3>
+                    <div class="item-subwrapper">
+                      <div class="cost-hotel">
+                        <p>Апартаменты</p>
+                        <a class="detailed-information" href="#">Подробнее</a>
+                      </div>
+                      <div class="cost-hotel">
+                        <p>От 2000 ₽</p>
+                        <a class="reservation" href="#">Забронировать</a>
+                      </div>
                     </div>
                   </div>
                   <div class="rank">
@@ -203,9 +207,9 @@
                       <p class="hotel-rating">Рейтинг: 9,2</p>
                     </div>
                   </div>
-                </li>
-              </ul>
-            </div>
+                </div>
+              </li>
+            </ul>
           </section>
         </div>
       </main>
