@@ -106,7 +106,8 @@ a {
 .nav-item {
   width: 240px;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 14px;
+  padding-left: 4.5px;
   box-sizing: border-box;
 }
 
@@ -119,7 +120,16 @@ a {
 }
 
 .photo-video {
+  padding-right: 7.5px;
   margin-right: 265px;
+}
+
+.state-map {
+  padding-left: 18px;
+}
+
+.hotels {
+  padding-left: 10px;
 }
 
 /*features*/
@@ -132,18 +142,18 @@ a {
   height: 509px;
   background-image: url(../img/shape.svg), url(../img/background1.jpg);
   background-repeat: no-repeat;
-  background-position: bottom -3px center;
+  background-position: bottom -1px center;
 }
 
 .welcome-title {
-  padding: 45px 340px 59px 340px;
+  padding: 41px 340px 54px 340px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .welcome-title h1{
-  margin: 0 0 55px;
+  margin: 0 0 44px;
 }
 
 .welcome-title p {
@@ -181,7 +191,7 @@ a {
 }
 
 .welcom {
-  margin-top: 80px;
+  margin-top: 76px;
 }
 
 .features-list {
@@ -197,7 +207,7 @@ a {
 }
 
 .uniqueness {
-  padding: 46px 49px 50px 50px;
+  padding: 47px 40px 50px;
   color: var(--accent);
   background-color: var(--basic-extra);
 }
@@ -205,7 +215,7 @@ a {
 .uniqueness h2 {
   font-size: 21px;
   line-height: 21px;
-  margin: 0 0 25px;
+  margin: 0 0 26px;
 }
 
 .uniqueness span,
@@ -217,7 +227,7 @@ a {
 }
 
 .reason-number {
-  margin: 0 0 23px;
+  margin: 0 0 26px;
 }
 
 .list-advantages {
@@ -228,6 +238,14 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--basic);
   list-style: none;
+}
+
+.list-advantages h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  padding-bottom: 5px;
 }
 
 .list-advantages p {
@@ -244,25 +262,30 @@ a {
   grid-row: 1/-1;
 }
 
+.bridge h2 {
+  padding-top: 5px;
+}
+
 .photo-bridge {
   grid-column: 1/2;
 }
 
 .list-advantages li {
-  margin: 61px 0 82px;
-  padding: 80px 50px 0 50px;
+  margin: 54px 0;
+  padding: 84px 50px 32px;
 }
 
 .house {
   background-image: url(../img/house.svg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position:  50% 4%;;
 }
 
 .food {
+  top: 5px;
   background-image: url(../img/food.svg);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: 50% 4%;
 }
 
 .gift {
@@ -281,7 +304,7 @@ a {
 .feature {
   text-align: center;
   margin: 0;
-  padding: 47px 75px 60px;
+  padding: 47px 68px 60px;
 }
 
 .feature h2 {
@@ -294,7 +317,7 @@ a {
 
 /* best-deals */
 .best-deals-forstay {
-  padding: 58px 316px 0;
+  padding: 52px 316px 0;
   text-align: center;
 }
 
@@ -302,14 +325,16 @@ a {
   font-size: 30px;
   line-height: 24px;
   font-weight: bold;
-  margin: 0 0 41px;
+  margin: 0 0 33px;
+  padding-right: 9px;
+  padding-top: 2px;
 }
 
 .best-deals p {
   font-size: 14px;
   line-height: 24px;
   color: var(--additional);
-  margin: 0 0 50px;
+  margin: 0 0 43.5px;
 }
 
 /*button form*/
@@ -356,7 +381,7 @@ a {
 
  .input-block {
   width: 288px;
-  padding: 11px 45px 11px 15px;
+  padding: 11px 45px 10px 15px;
   margin-left: auto;
 }
 .adults {
@@ -364,7 +389,7 @@ a {
 }
 
 .children {
-  margin-left: 27px;
+  margin-left: 24px;
 }
 
 .minus {
@@ -475,7 +500,8 @@ a {
 }
 
  .index {
-  margin-top: -128px;
+  opacity: 0.9;
+  margin-top: -121px;
   background: rgba(255, 255, 255, 0.9);
 }
 
@@ -483,7 +509,11 @@ a {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  padding: 10px 38px 10px 150px;
+  padding: 23px 35px 10px 153px;
+}
+
+.contacts-visit {
+  margin: 0 0 10px;
 }
 
 .contacts-phone {
@@ -495,7 +525,7 @@ a {
 .footer-social {
   width: 150px;
   margin: 0 auto;
-  padding: 0 60px 40px 40px;
+  padding: 0 59px 40px 40px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -507,7 +537,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 36px;
   width: 46px;
   height: 48px;
   color: inherit;
@@ -532,18 +562,21 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 138px;
-  padding-right: 8px;
+  margin-right: 132px;
 }
 
 .copyright p {
-  margin-right: 8px;
+ padding-bottom: 15px;
 }
 
 .footer-copyright {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
+}
+
+.link-academy {
+  padding-left: 15px;
 }
 
 .link-academy:hover path {
@@ -554,9 +587,22 @@ a {
   fill: var(--copyright);
 }
 
+.link-academy {
+  padding-bottom: 6px;
+}
+
+.map {
+  width: 1200px;
+  height: 594px;
+  background-color: var(--basic-extra);
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+}
+
 /* catalog */
 
 .legend {
+  min-height: 217px;
   color: var(--accent);
   background-image: url(../img/background2.jpg);
   background-color: var(--basic-extra);
@@ -600,7 +646,7 @@ a {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: -39px;
   top: 0;
   width: 23px;
   height: 23px;
@@ -612,13 +658,17 @@ a {
 .filter-input-checkbox:checked + label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: -39px;
   top: 0;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input-checkbox:focus + label::before {
+  outline: 3px solid rgba(248, 250, 250, 0.289);
 }
 
 .cost-day {
@@ -631,7 +681,7 @@ a {
 .price-controls {
   position: relative;
   width: 317px;
-  height: 36px;
+  height: 30px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid var(--basic);
@@ -661,7 +711,7 @@ a {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 57px;
+  padding-left: 62px;
 }
 
 .price-controls input {
@@ -686,7 +736,7 @@ a {
 }
 
 .range-controls .bar {
-  width: 80%;
+  width: 79%;
   height: 2px;
   background: var(--basic);
 }
@@ -715,18 +765,22 @@ a {
   cursor: pointer;
 }
 
+.range-toggle-min:focus {
+  outline: 5px solid var(--main-text);
+}
+
 .range-toggle-min {
   left: 0;
 }
 
 .range-toggle-max {
-  left: 80%;
+  left: 79%;
 }
 
 .show-list {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin-left: 86px;
+  padding: 6.5px 33px;
   font-size: 14px;
   line-height: 21px;
   color: var(--basic);
@@ -899,6 +953,10 @@ a {
   list-style: none;
 }
 
+.star li {
+  padding-left: 5px;
+}
+
 .hotel-rating {
   font-size: 14px;
   line-height: 21px;
@@ -913,7 +971,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 26px 5px;
+  padding: 26px 5px 10px;
 }
 
 .infrastructure{
@@ -935,7 +993,7 @@ a {
 .results {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 73px 10px 73px;
+  padding: 7px 73px 12px 73px;
 }
 
 .results-sorting {
