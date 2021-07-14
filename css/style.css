@@ -207,7 +207,7 @@ a {
 }
 
 .uniqueness {
-  padding: 47px 40px 50px;
+  padding: 45px 40px 46px;
   color: var(--accent);
   background-color: var(--basic-extra);
 }
@@ -271,7 +271,7 @@ a {
 }
 
 .list-advantages li {
-  margin: 54px 0;
+  margin: 51px 0;
   padding: 84px 50px 32px;
 }
 
@@ -317,7 +317,7 @@ a {
 
 /* best-deals */
 .best-deals-forstay {
-  padding: 52px 316px 0;
+  padding: 47px 316px 0;
   text-align: center;
 }
 
@@ -506,14 +506,14 @@ a {
 }
 
 .contacts {
+  padding: 23px 36px 10px 153px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  padding: 23px 35px 10px 153px;
 }
 
 .contacts-visit {
-  margin: 0 0 10px;
+  margin: 0 0 9px;
 }
 
 .contacts-phone {
@@ -525,7 +525,7 @@ a {
 .footer-social {
   width: 150px;
   margin: 0 auto;
-  padding: 0 59px 40px 40px;
+  padding: 0 60px 40px 40px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -562,11 +562,11 @@ a {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin-right: 132px;
+  margin-right: 131px;
 }
 
 .copyright p {
- padding-bottom: 15px;
+ padding-bottom: 12px;
 }
 
 .footer-copyright {
@@ -577,6 +577,7 @@ a {
 
 .link-academy {
   padding-left: 15px;
+  padding-bottom: 4px;
 }
 
 .link-academy:hover path {
@@ -585,10 +586,6 @@ a {
 
 .link-academy:focus path {
   fill: var(--copyright);
-}
-
-.link-academy {
-  padding-bottom: 6px;
 }
 
 .map {
