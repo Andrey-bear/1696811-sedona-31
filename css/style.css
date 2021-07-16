@@ -2,22 +2,33 @@
 
 :root {
   --basic: #ffffff;
+  --basic-light: rgba(256, 256, 256, 0.3);
   --basic-extra: #81b3d2;
+  --basic-extra-accent: rgba(0, 0, 0, 0.3);
   --basic-extra-light: #eeeeee;
   --basic-neutral: #f2f2f2;
   --main-text: #000000;
   --text-light: #666666;
   --additional: #333333;
   --accent: #ffffff;
-  --navigation-rest: #000000;
   --navigation-aiming: #81b3d2;
+  --navigation-aiming-accent: rgba(0, 0, 0, 0.3);
+  --navigation-aiming-light: rgba(0, 0, 0, 0.3);
   --navigation-active: #766357;
+  --checkbox-accent: rgba(248, 250, 250, 0.289);
+  --range-shadow: rgba(248, 250, 250, 0.289);
+  --range-shadow-light: rgba(248, 250, 250, 0.289);
   --blocked: #6a6a6a;
+  --shadow-light: rgba(0, 1, 1, 0.15);
+  --rating-light: rgba(0, 0, 0, 0.3);
   --find-rest: #81b3d2;
   --find-aiming: #669ec0;
+  --find-aiming-light: rgba(255, 255, 255, 0.3);
   --find-pressing: #5496bd;
+  --find-pressing-light: rgba(160, 205, 233, 0.7);
   --search-rest: #766357;
   --search-aiming: #604e43;
+  --search-aiming-light: rgba(0, 1, 1, 0.15);
   --search-pressing: #503e33;
   --small-button: #a9a9a9;
   --copyright: #bdbbbc;
@@ -25,6 +36,8 @@
   --focus-light: #e5e5e5;
   --shadow: #dbdbdb;
   --accent-pen: #ababab;
+  --range-controls-light: rgba(255, 255, 255, 0.3);
+  --transparency-light: rgba(255, 255, 255, 0.9);
 }
 
 .visually-hidden {
@@ -106,7 +119,7 @@ a {
 }
 
 .site-navigation a {
-  color: var(--navigation-rest);
+  color: var(--main-text);
 }
 
 .nav-item {
@@ -122,7 +135,7 @@ a {
 }
 
 .site-navigation a:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--navigation-aiming-light);
 }
 
 .photo-video {
@@ -357,7 +370,7 @@ a {
   color: var(--main-text);
   background-color: var(--basic);
   padding: 55px;
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0px 7px 15px var(--shadow-light);
 }
 
 .form-element {
@@ -423,7 +436,7 @@ a {
 }
 
 .best-deals-button:active {
-  color:  rgba(255, 255, 255, 0.3);
+  color:  var(--search-aiming-light);
   background-color: var(--search-pressing);
 }
 
@@ -492,7 +505,7 @@ a {
 }
 
 .button:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--find-aiming-light);
   background-color: var(--find-pressing);
 }
 
@@ -510,7 +523,7 @@ a {
 .index {
   opacity: 0.9;
   margin-top: -121px;
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--transparency-light);
 }
 
 .contacts {
@@ -561,7 +574,7 @@ a {
 }
 
 .social-button:focus path {
-  fill:rgba(160, 205, 233, 0.7);
+  fill:var(--find-pressing-light);
 }
 
 .copyright {
@@ -657,7 +670,7 @@ a {
   top: 0;
   width: 23px;
   height: 23px;
-  background-image: url("../img/checkbox-off.svg");
+  background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -669,13 +682,13 @@ a {
   top: 0;
   width: 27px;
   height: 23px;
-  background-image: url("../img/checkbox-on.svg");
+  background-image: url(../img/checkbox-on.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
 .filter-input-checkbox:focus + label::before {
-  outline: 3px solid rgba(248, 250, 250, 0.289);
+  outline: 3px solid var(--checkbox-accent);
 }
 
 .cost-day {
@@ -739,7 +752,7 @@ a {
 
 .range-controls .scale {
   height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--range-controls-light);
 }
 
 .range-controls .bar {
@@ -756,7 +769,7 @@ a {
   background: var(--accent-pen);
   border: 8px solid var(--basic);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(248, 250, 250, 0.289);
+  box-shadow: 0 2px 1px 0 var(--range-shadow);
   cursor: pointer;
 }
 
@@ -768,7 +781,7 @@ a {
   background: var(--accent-pen);
   border: 9px solid var(--basic);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(248, 250, 250, 0.289);
+  box-shadow: 0 2px 1px 0 var(--range-shadow-light);
   cursor: pointer;
 }
 
@@ -835,44 +848,93 @@ a {
   color: var(--navigation-aiming);
 }
 
-.price a:hover {
+.price a:hover::after {
   color: var(--basic-extra);
-  border-bottom: dotted;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 17px;
+  width: 52px;
+  height: 1px;
+  background-image: url(../img/line.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .price a:active {
-  color: var(--navigation-rest);
-  border: none;
+  color: var(--main-text);
 }
 
-.type a{
-  color: rgba(0, 0, 0, 0.3);
-  border-bottom: dotted;
+.type a {
+  color: var(--rating-light);
+}
+
+.type a::after {
+  position: absolute;
+  content: "";
+  left: -1px;
+  top: 17px;
+  width: 52px;
+  height: 1px;
+  background-image: url(../img/line.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .type a:hover {
   color: var(--basic-extra);
-  border-bottom: dotted;
+}
+
+.type a:hover::after {
+  position: absolute;
+  content: "";
+  left: -1px;
+  top: 17px;
+  width: 52px;
+  height: 1px;
+  background-image: url(../img/line.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .type a:active {
-  color: var(--navigation-rest);
-  border: none;
+  color: var(--main-text);
 }
 
-.rating a{
-  color: rgba(0, 0, 0, 0.3);
-  border-bottom: dotted;
+.rating a {
+  color: var(--rating-light);
+}
+
+.rating a::after{
+  position: absolute;
+  content: "";
+  left: -1px;
+  top: 17px;
+  width: 75px;
+  height: 1px;
+  background-image: url(../img/line.svg);
+  background-repeat: repeat-x;
+  background-position: 0 0;
 }
 
 .rating a:hover {
   color: var(--basic-extra);
-  border-bottom: dotted;
+}
+
+.rating a:hover::after {
+  position: absolute;
+  content: "";
+  left: -1px;
+  top: 17px;
+  width: 75px;
+  height: 1px;
+  background-image: url(../img/line.svg);
+  background-repeat: repeat-x;
+  background-position: 0 0;
 }
 
 .rating a:active {
-  color: var(--navigation-rest);
-  border: none;
+  color: var(--main-text);
 }
 
 .sort-up {
@@ -881,7 +943,7 @@ a {
 
 .sort-up:hover path,
 .sort-bottom:hover path {
-  fill: var(--navigation-rest);
+  fill: var(--main-text);
 }
 
 .sort-up:focus path,
@@ -913,7 +975,7 @@ a {
 }
 
 .card h3 a:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--navigation-aiming-accent);
 }
 
 /*detailed*/
@@ -933,7 +995,7 @@ a {
 }
 
 .detailed-information:active {
-  color: rgba(256, 256, 256, 0.3);
+  color: var(--basic-ligh);
   background: var(--find-pressing);
 }
 
@@ -954,7 +1016,7 @@ a {
 }
 
 .reservation:active {
-  color: rgba(256, 256, 256, 0.3);
+  color: var(--basic-light);
   background: var(--search-pressing);
 }
 
