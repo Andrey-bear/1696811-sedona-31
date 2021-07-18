@@ -3,11 +3,6 @@ const searchForm = document.querySelector(".search");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
-  searchForm.classList.add("modal");
-});
-
-link.addEventListener("click", function (evt) {
-  evt.preventDefault();
   searchForm.classList.toggle("modal-show");
 });
 
